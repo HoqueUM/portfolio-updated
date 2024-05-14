@@ -1,9 +1,12 @@
 [build]	
-    command = "next build"
-    build = "out"
+    command = "npm run build && npm run start"
+    publish = "out"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [[redirects]]
-  from = "/_next/static/*"
-  to = "/static/:splat"
+  from = "/_next/static"
+  to = "/static/splat"
   status = 301
   force = true
