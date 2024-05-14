@@ -1,5 +1,4 @@
 'use client';
-import * as THREE from 'three';
 import React, { Suspense, useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Shapes from './Shapes';
@@ -30,7 +29,7 @@ export default function Index() {
   useEffect( () => {
     window.addEventListener("mousemove", manageMouse)
     return () => window.removeEventListener("mousemove", manageMouse)
-  }, [])
+  }, [manageMouse])
 
   return (
     <div className='absolute p-0 m-0 top-0 w-0' style={{ width: '100%', height: '100%' }}>

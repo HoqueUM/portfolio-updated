@@ -1,13 +1,9 @@
 import'./index.scss';
-import React, { Suspense } from 'react'
+import React from 'react'
 import Home from '@/app/components/Home';
 import Index from '@/app/components/canvas1';
-import Carousel from '@/app/components/Carousel2';
 import HeadComponent from '@/app/components/Head';
-import RH from '/public/rh.png';
-import CanvasObject from '@/app/components/canvas';
-import Loading from '@/app/components/Loading';
-import Timeline from '@/app/components/Timeline';
+
 //<div className='bg-gradient-to-br from-[#FB7B8E] from-10% via-fuchsia-400 via-30% to-[#031B88] to-90% border-2 sm:w-[40rem] lg:w-[75rem] h-screen backdrop-blur-sm z-50 rounded-3xl'></div>
 export default function Page() {
   return (
@@ -26,7 +22,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <Carousel />
       <footer className='flex justify-center py-2 text-white'>Made with ❤️ by Rahul Hoque</footer>
     </main>
   );
