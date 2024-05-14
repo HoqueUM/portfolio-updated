@@ -3,6 +3,7 @@ import React, { Suspense } from 'react'
 import Home from '@/components/Home';
 import Index from '@/components/canvas1';
 import Carousel from '@/components/Carousel2';
+import HeadComponent from '@/components/Head';
 import RH from '/public/rh.png';
 import CanvasObject from '@/components/canvas';
 import Loading from '@/components/Loading';
@@ -12,6 +13,7 @@ export default function Page() {
   return (
 
     <main>   
+      <HeadComponent />
       <Home />
       <Index />
       <div className='flex justify-center items-center py-32'>
