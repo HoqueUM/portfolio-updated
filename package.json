@@ -21,7 +21,8 @@
     "react-dom": "^18",
     "react-rotating-text": "^1.4.1",
     "react-three-fiber": "^6.0.13",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-vertical-timeline-component": "^3.6.0",
+    "sass": "^1.77.1"
   },
   "devDependencies": {
     "@types/node": "^20",
