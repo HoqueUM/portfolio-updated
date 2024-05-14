@@ -1,6 +1,6 @@
 [build]	
     command = "next build"
-    build = "build"
+    build = "out"
 
 [[redirects]]
   from = "/_next/static/*"

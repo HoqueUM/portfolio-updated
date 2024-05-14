@@ -1,6 +1,6 @@
 'use client';
 import { Canvas } from '@react-three/fiber';
-import MainSphere from '@/components/MainSphere';
+import MainSphere from '@/app/components/MainSphere';
 
 export default function CanvasObject() {
   return (

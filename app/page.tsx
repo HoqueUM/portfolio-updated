@@ -1,21 +1,19 @@
 import'./index.scss';
 import React, { Suspense } from 'react'
-import Home from '@/components/Home';
-import Index from '@/components/canvas1';
-import Carousel from '@/components/Carousel2';
-import HeadComponent from '@/components/Head';
+import Home from '@/app/components/Home';
+import Index from '@/app/components/canvas1';
+import Carousel from '@/app/components/Carousel2';
+import HeadComponent from '@/app/components/Head';
 import RH from '/public/rh.png';
-import CanvasObject from '@/components/canvas';
-import Loading from '@/components/Loading';
-import Timeline from '@/components/Timeline';
+import CanvasObject from '@/app/components/canvas';
+import Loading from '@/app/components/Loading';
+import Timeline from '@/app/components/Timeline';
 //<div className='bg-gradient-to-br from-[#FB7B8E] from-10% via-fuchsia-400 via-30% to-[#031B88] to-90% border-2 sm:w-[40rem] lg:w-[75rem] h-screen backdrop-blur-sm z-50 rounded-3xl'></div>
 export default function Page() {
   return (
 
     <main>   
       <HeadComponent />
-      <Home />
-      <Index />
       <div className='flex justify-center items-center py-32'>
         <div className='flex justify-center items-center text-white sm:w-[40rem] lg:w-[75rem] h-screen 
         backdrop-blur-md z-50 rounded-3xl shadow-xl' style={{backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
@@ -26,7 +24,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <Carousel />
       <footer className='flex justify-center py-2 text-white'>Made with ❤️ by Rahul Hoque</footer>
     </main>
   );
