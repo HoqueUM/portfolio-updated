@@ -1,6 +1,6 @@
-[build]
-  command = "next build"
-  publish = ".next"
+[build]	
+    command = "next build"
+    build = "build"
 
 [[redirects]]
   from = "/_next/static/*"
