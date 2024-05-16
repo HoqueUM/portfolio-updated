@@ -32,7 +32,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/components/MainSphere.tsx",
+    "app/components/model/MainSphere.tsx",
     "app/components/Loading.tsx",
     "build/types/**/*.ts"
   ],

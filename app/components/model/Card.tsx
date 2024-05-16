@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import '@/app/index.scss';
+import '../../globals.scss';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Card() {

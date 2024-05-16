@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
     font-family: 'Radio Canada Big';
@@ -27,6 +29,9 @@
     unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
+font {
+    color: #ebebeb;
+}
 
 body {
     --dot-bg: linear-gradient(152deg,#fff,#00bfd8 42%,#0083f5);
@@ -36,7 +41,7 @@ body {
     width: 100%;
     height: 100%;
     background-position: var(--mouse-x) var(--mouse-y);
-    background: linear-gradient(135deg, #FB7B8E 10%, #f43f5e 30%, #031B88 90%);
+    background: black;
     font-family: 'Poppins', sans-serif !important;
     scroll-behavior: smooth;
 }
@@ -46,3 +51,4 @@ body {
     -webkit-text-stroke-color: white;
 
 }
+

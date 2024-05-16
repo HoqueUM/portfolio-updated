@@ -14,17 +14,22 @@
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.6",
     "@react-three/postprocessing": "^2.16.2",
+    "clsx": "^2.1.1",
     "framer": "^2.4.1",
     "framer-motion": "^10.18.0",
     "framer-motion-3d": "^11.1.9",
     "next": "^14.2.3",
     "react": "^18",
+    "react-chrono": "^2.6.1",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
+    "react-infinite-scroll-component": "^6.1.0",
     "react-rotating-text": "^1.4.1",
     "react-three-fiber": "^6.0.13",
     "react-vertical-timeline-component": "^3.6.0",
-    "sass": "^1.77.1"
+    "sass": "^1.77.1",
+    "simplex-noise": "^4.0.1",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.2.2",

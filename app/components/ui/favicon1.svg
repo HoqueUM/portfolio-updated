@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs/>
+  <g transform="matrix(1, 0, 0, 1, 53.706555, 192.400363)">
+    <rect x="0" y="0" width="40" height="40" rx="3" ry="3" style=""/>
+    <text style="white-space: pre;" letter-spacing="1" font-size="15px" font-family="Arial, Helvetica, sans-serif" fill="#FFFFFF" y="19" x="5" transform="matrix(1, 0, 0, 1, 0.091497, 0.02704)"><tspan x="5" dy="1em">​</tspan>            <tspan x="5" dy="1em">​</tspan>            <tspan x="6" y="28">_</tspan><tspan x="5" dy="1em">​</tspan>        </text>
+  </g>
+  <text style="fill: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 28px; white-space: pre;" x="54.489" y="215.692" transform="matrix(0.541989, 0, 0, 0.554526, 28.799347, 92.753732)">RH</text>
+</svg>

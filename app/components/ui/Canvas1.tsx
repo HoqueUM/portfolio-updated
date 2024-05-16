@@ -1,7 +1,7 @@
 'use client';
 import React, { Suspense, useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
-import Shapes from './Shapes';
+import Shapes from '../model/Shapes';
 import { Environment, Loader } from '@react-three/drei'
 import { useMotionValue, useSpring } from "framer-motion"
 
