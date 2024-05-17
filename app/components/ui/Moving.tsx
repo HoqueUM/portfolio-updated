@@ -19,18 +19,6 @@ import { FaGitAlt } from "react-icons/fa";
 
 import Item from '../model/Item';
 
-export default function Moving() {
-  return (
-    <div className="flex flex-col antialiased bg-black items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards
-        items={languages}
-        direction="left"
-        speed="slow"
-      />
-    </div>
-  );
-}
-
 const languagesComponents = [
   <IoLogoJavascript size={50} />,
   <FaHtml5 size={50} />,
@@ -53,3 +41,15 @@ const languagesComponents = [
 const languages = languagesComponents.map((component, index) => 
   <Item key={index} item={component} />
 );
+
+export default function Moving() {
+  return (
+    <div className="flex flex-col antialiased bg-black items-center justify-center relative overflow-hidden">
+      <InfiniteMovingCards
+        items={languages}
+        direction="left"
+        speed="slow"
+      />
+    </div>
+  );
+}
