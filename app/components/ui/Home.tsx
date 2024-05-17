@@ -1,6 +1,5 @@
 import React from 'react'
 import  TextRevealCardPreview  from './Reveal';
-import Wave from './Wave';
 import { BackgroundBeams } from "../../utils/background-beams";
 
 export default function Home() {
