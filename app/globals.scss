@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #808080;
+  }
+
 @font-face {
     font-family: 'Radio Canada Big';
     font-style: normal;
@@ -41,7 +46,6 @@ body {
     width: 100%;
     height: 100%;
     background-position: var(--mouse-x) var(--mouse-y);
-    background: black;
     font-family: 'Poppins', sans-serif !important;
     scroll-behavior: smooth;
 }

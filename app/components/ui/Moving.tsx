@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../../utils/movingCards";
 import {IoLogoJavascript} from 'react-icons/io5';
@@ -11,21 +10,11 @@ import { TbBrandCpp } from "react-icons/tb";
 import { IconContext } from 'react-icons';
 import Item from '../model/Item';
 
-export default function InfiniteMovingCardsDemo() {
+export default function Moving() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="flex flex-col antialiased bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
-        items={testimonials}
-        direction="left"
-        speed="slow"
-      />
-    <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    <InfiniteMovingCards
-        items={testimonials}
+        items={languages}
         direction="left"
         speed="slow"
       />
@@ -33,7 +22,7 @@ export default function InfiniteMovingCardsDemo() {
   );
 }
 
-const testimonials = [
+const languages = [
   <Item item={<IoLogoJavascript size={90} />} />,
   <Item item={<FaHtml5 size={90} />} />,
   <Item item={<FaCss3 size={90} />} />,

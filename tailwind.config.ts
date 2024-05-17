@@ -15,6 +15,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        "primary-color": "var(--primary-color)",
+        "secondary-color": "var(--secondary-color)"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
