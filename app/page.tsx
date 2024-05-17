@@ -1,4 +1,4 @@
-import { Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import'./globals.scss';
 import './styles/dots.scss';
 import './styles/grid.scss'
@@ -9,12 +9,12 @@ import Moving from './components/ui/Moving';
 import NavBar from './components/ui/NavBar';
 import About from './components/ui/About';
 //<div className='bg-gradient-to-br from-[#FB7B8E] from-10% via-fuchsia-400 via-30% to-[#031B88] to-90% border-2 sm:w-[40rem] lg:w-[75rem] h-screen backdrop-blur-sm z-50 rounded-3xl'></div>
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
+const inter = Inter({ weight: "400", subsets: ["latin"] });
 
 export default function Page() {
   return (
 
-    <main className={poppins.className}>   
+    <main className={inter.className}>   
       <NavBar />
       <div id='home'>
       <Home />
