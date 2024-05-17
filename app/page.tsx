@@ -1,3 +1,4 @@
+import { Poppins } from 'next/font/google';
 import'./globals.scss';
 import './styles/dots.scss';
 import './styles/grid.scss'
@@ -8,22 +9,24 @@ import Moving from './components/ui/Moving';
 import NavBar from './components/ui/NavBar';
 import About from './components/ui/About';
 //<div className='bg-gradient-to-br from-[#FB7B8E] from-10% via-fuchsia-400 via-30% to-[#031B88] to-90% border-2 sm:w-[40rem] lg:w-[75rem] h-screen backdrop-blur-sm z-50 rounded-3xl'></div>
+const poppins = Poppins({ weight: "400", subsets: ["latin"] });
+
 export default function Page() {
   return (
 
-    <main>   
+    <main className={poppins.className}>   
       <NavBar />
       <div id='home'>
       <Home />
       </div>
       
-      <div className='flex justify-center items-center py-32 dots' id='experience'>
+      <div className='flex justify-center items-center py-32 bg-black' id='experience'>
         <Timeline />
       </div>
       
       <div className='flex flex-col h-screen justify-center items-center bg-black text-secondary-color text-center' id='projects'>
       <Moving />
-        <p className='mb-2 '> ⌛ Coming soon ⌛</p>
+        <p className='mb-2'> ⌛ Coming soon ⌛</p>
         <p>Stay tuned to see what I&apos;m working on!</p>
             </div>
       <div id='about'>
