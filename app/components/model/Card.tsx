@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function Card() {
     const [hover, setHover] = useState(false);
     return (
-        <motion.div className='relative overflow-hidden h-[200px] min-h-[300px]  min-w-[300px] backdrop-blur-md z-50 rounded-3xl shadow-xl' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
+        <motion.div className='relative overflow-hidden h-[10rem] min-h-[11rem]  min-w-[300px] backdrop-blur-md rounded-3xl shadow-xl' style={{backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
         onHoverStart={() => setHover(true)}
         onHoverEnd={() => setHover(false)}
         >

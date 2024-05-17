@@ -61,7 +61,7 @@ export const InfiniteMovingCards = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "200s");
+        containerRef.current.style.setProperty("--animation-duration", "100s");
       }
     }
   };
@@ -76,13 +76,13 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          " flex min-w-full shrink-0 gap-4 py-32 w-max flex-nowrap",
           start && "animate-scroll ",
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="w-[50px] h-[150] justify-center items-center relative rounded-2xl border border-b-0 flex-shrink-0 px-8 py-6 md:w-[150px]"
+            className="w-[100px] h-[100px] flex justify-center items-center relative rounded-2xl border-b-0 flex-shrink-0 px-8 py-6"
             style={{
               background:
                 "var(--primary-color)",
