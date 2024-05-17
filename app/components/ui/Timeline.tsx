@@ -18,7 +18,7 @@ animate={true}
     iconStyle={{ background: 'transparent', color: '#fff', boxShadow: 'none' }}
     visible={true}
   >
-    <h2 className="vertical-timeline-element-title text-white" style={{color: 'white'}}>Software Engineer</h2>
+    <h2 className="vertical-timeline-element-title text-white" style={{color: 'white'}}>Software Engineer Intern</h2>
     <h3 className="vertical-timeline-element-title">Avasure</h3>
     <h4 className="vertical-timeline-element-subtitle">Grand Rapids, MI</h4>
     <p>
