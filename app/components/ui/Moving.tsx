@@ -20,22 +20,22 @@ import { FaGitAlt } from "react-icons/fa";
 import Item from '../model/Item';
 
 const languagesComponents = [
-  <IoLogoJavascript size={50} />,
-  <FaHtml5 size={50} />,
-  <FaCss3 size={50} />,
-  <SiTypescript size={50} />,
-  <FaPython size={50} />,
-  <TbBrandCpp size={50} />,
-  <FaReact size={50} />,
-  <SiNextdotjs size={50} />,
-  <RiTailwindCssFill size={50} />,
-  <SiPandas size={50} />,
-  <SiScikitlearn size={50} />,
-  <SiFlask size={50} />,
-  <FaUbuntu size={50} />,
-  <VscVscode size={50} />,
-  <FaFigma size={50} />,
-  <FaGitAlt size={50} />,
+  <IoLogoJavascript key="js" size={50} />,
+  <FaHtml5 key="html" size={50} />,
+  <FaCss3 key="css" size={50} />,
+  <SiTypescript key="ts" size={50} />,
+  <FaPython key="python" size={50} />,
+  <TbBrandCpp key="cpp" size={50} />,
+  <FaReact key="react" size={50} />,
+  <SiNextdotjs key="nextjs" size={50} />,
+  <RiTailwindCssFill key="tailwind" size={50} />,
+  <SiPandas key="pandas" size={50} />,
+  <SiScikitlearn key="scikit" size={50} />,
+  <SiFlask key="flask" size={50} />,
+  <FaUbuntu key="ubuntu" size={50} />,
+  <VscVscode key="vscode" size={50} />,
+  <FaFigma key="figma" size={50} />,
+  <FaGitAlt key="git" size={50} />,
 ];
 
 const languages = languagesComponents.map((component, index) => 
