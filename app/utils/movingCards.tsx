@@ -19,6 +19,12 @@ export const InfiniteMovingCards = ({
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
+  const [displayItems, setDisplayItems] = useState(items);
+
+  useEffect(() => {
+    setDisplayItems([...items, ...items]);
+  }, [items]);
+
   const getDirection = useCallback(() => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -48,21 +54,10 @@ export const InfiniteMovingCards = ({
   }, [speed, containerRef]);
 
   const addAnimation = useCallback(() => {
-    if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
-
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
-      });
-
-      getDirection();
-      getSpeed();
-      setStart(true);
-    }
-  }, [getDirection, getSpeed, containerRef, scrollerRef]);
+    getDirection();
+    getSpeed();
+    setStart(true);
+  }, [getDirection, getSpeed]);
 
   useEffect(() => {
     addAnimation();
@@ -85,7 +80,7 @@ export const InfiniteMovingCards = ({
           start && "animate-scroll ",
         )}
       >
-        {items.map((item, idx) => (
+        {displayItems.map((item, idx) => (
           <li
             className="w-[100px] h-[100px] flex justify-center items-center relative rounded-2xl border-b-0 flex-shrink-0 px-8 py-6"
             style={{
