@@ -22,7 +22,6 @@ animate={true}
     <h3 className="vertical-timeline-element-title">Avasure</h3>
     <h4 className="vertical-timeline-element-subtitle">Grand Rapids, MI</h4>
     <p>
-      Creative Direction, User Experience, Visual Design, SEO, Online Marketing
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
