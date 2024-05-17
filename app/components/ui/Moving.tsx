@@ -31,21 +31,25 @@ export default function Moving() {
   );
 }
 
-const languages = [
-  <Item item={<IoLogoJavascript size={50} />} />,
-  <Item item={<FaHtml5 size={50} />} />,
-  <Item item={<FaCss3 size={50} />} />,
-  <Item item={<SiTypescript size={50} />} />,
-  <Item item={<FaPython size={50} />} />,
-  <Item item={<TbBrandCpp size={50} />} />,
-  <Item item={<FaReact size={50} />} />,
-  <Item item={<SiNextdotjs size={50} />} />,
-  <Item item={<RiTailwindCssFill size={50} />} />,
-  <Item item={<SiPandas size={50} />} />,
-  <Item item={<SiScikitlearn size={50} />} />,
-  <Item item={<SiFlask size={50} />} />,
-  <Item item={<FaUbuntu size={50} />} />,
-  <Item item={<VscVscode size={50} />} />,
-  <Item item={<FaFigma size={50} />} />,
-  <Item item={<FaGitAlt size={50} />} />,
+const languagesComponents = [
+  <IoLogoJavascript size={50} />,
+  <FaHtml5 size={50} />,
+  <FaCss3 size={50} />,
+  <SiTypescript size={50} />,
+  <FaPython size={50} />,
+  <TbBrandCpp size={50} />,
+  <FaReact size={50} />,
+  <SiNextdotjs size={50} />,
+  <RiTailwindCssFill size={50} />,
+  <SiPandas size={50} />,
+  <SiScikitlearn size={50} />,
+  <SiFlask size={50} />,
+  <FaUbuntu size={50} />,
+  <VscVscode size={50} />,
+  <FaFigma size={50} />,
+  <FaGitAlt size={50} />,
 ];
+
+const languages = languagesComponents.map((component, index) => 
+  <Item key={index} item={component} />
+);

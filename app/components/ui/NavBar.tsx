@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import RH from './image.png';
+import RH from '../../favicon.ico';
 import Image from 'next/image'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
