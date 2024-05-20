@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-import RH from '../../favicon.ico';
+import RH  from '../../favicon.svg';
 import Image from 'next/image'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -15,7 +15,7 @@ export default function NavBar() {
             <nav className='flex justify-between static top-2 sm:top-3 md:top-4 lg:top-5 xl:top-6 2xl:top-7 left-0'>
               <div className='relative z-2 flex space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-5 xl:space-x-6 2xl:space-x-7 font-mono text-[#606060]'>
                 <a className='pr-2 sm:pr-3 md:pr-4 lg:pr-5 xl:pr-6 2xl:pr-7' href='#hero'>
-                <Image src={RH} height={40} width={40} alt='logo'/>
+                <Image src={RH} width={50} height={50} className='invert p-0' alt='logo'/>                
                 </a>
                 <ul className='flex space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-5 xl:space-x-6 2xl:space-x-7'>
                   <button><Link activeClass='active' smooth spy to="home" className='hover:font-extrabold'>Home</Link></button>
