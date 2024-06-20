@@ -20,6 +20,7 @@ export default function NavBar() {
                 <ul className='flex space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-5 xl:space-x-6 2xl:space-x-7'>
                   <button><Link activeClass='active' smooth spy to="home" className='hover:font-extrabold'>Home</Link></button>
                   <button><Link activeClass='active' smooth spy to="experience" className='hover:font-extrabold'>Experience</Link></button>
+                  <button><Link activeClass='active' smooth spy to="skills" className='hover:font-extrabold'>Skills</Link></button>
                   <button><Link activeClass='active' smooth spy to="projects" className='hover:font-extrabold'>Projects</Link></button>
                   <button><Link activeClass='active' smooth spy to="about" className='hover:font-extrabold'>About</Link></button>
                 </ul>

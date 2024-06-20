@@ -8,10 +8,29 @@ import Timeline from './components/ui/Timeline';
 import Moving from './components/ui/Moving';
 import NavBar from './components/ui/NavBar';
 import About from './components/ui/About';
+import Skills from './components/ui/Skills';
+import Card from './components/model/Card';
+import ProjectCard from './components/model/ProjectCard';
 //<div className='bg-gradient-to-br from-[#FB7B8E] from-10% via-fuchsia-400 via-30% to-[#031B88] to-90% border-2 sm:w-[40rem] lg:w-[75rem] h-screen backdrop-blur-sm z-50 rounded-3xl'></div>
 const inter = Inter({ weight: "400", subsets: ["latin"] });
 
 export default function Page() {
+  const projects = [
+    {
+      image: '/home/rhoque/portfolio-updated/app/components/ui/favicon.png',
+      name: 'Poopy Bum',
+      description: 'Hi',
+      skills: ['React', 'Next.js', 'Tailwind CSS'],
+      link: 'https://github.com/HoqueUM/better-atlas',
+    },
+    {
+      image: '/home/rhoque/portfolio-updated/app/components/ui/favicon.png',
+      name: 'Cock',
+      description: 'I hate CS!',
+      skills: ['React', 'Next.js', 'Tailwind CSS'],
+      link: 'https://github.com/HoqueUM/better-atlas',
+    },
+  ];
   return (
 
     <main className={inter.className}>   
@@ -23,9 +42,22 @@ export default function Page() {
       <div className='flex justify-center items-center py-32 bg-black' id='experience'>
         <Timeline />
       </div>
-      
+      <div id='skills'>
+      <Skills />
+      </div>
       <div className='flex flex-col h-screen justify-center items-center bg-black text-secondary-color text-center' id='projects'>
-      <Moving />
+        
+        <p className='mb-2'> ⌛ Complete ⌛</p>
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            image={project.image}
+            name={project.name}
+            description={project.description}
+            skills={project.skills}
+            link={project.link}
+          />
+        ))}
         <p className='mb-2'> ⌛ Coming soon ⌛</p>
         <p>Stay tuned to see what I&apos;m working on!</p>
             </div>
