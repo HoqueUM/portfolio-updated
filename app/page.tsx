@@ -117,7 +117,7 @@ export default function Page() {
       name: 'HackGR',
       description: 'Organizing the largest hackathon in West Michigan.',
       skills: ['Hackathons', 'Community Building', 'Sponsorship'],
-      link: 'https://github.com/HoqueUM/rMp',
+      link: '',
     },
     {
       image: {
@@ -128,7 +128,7 @@ export default function Page() {
       name: 'FollowUps',
       description: 'A service to help students follow up on every job application.',
       skills: ['SaaS', 'Job Applications', 'Follow Ups'],
-      link: 'https://github.com/HoqueUM/rMp',
+      link: '',
     },
   ];
   return (

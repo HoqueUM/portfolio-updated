@@ -1,5 +1,5 @@
 import { FaPython, FaJs, FaReact, FaNodeJs, FaDocker, FaGit, FaLinux } from 'react-icons/fa';
-import { SiCplusplus, SiTypescript, SiCsharp, SiPandas, SiScikitlearn, SiNextdotjs, SiTailwindcss, SiSass, SiFlask, SiFastapi, SiPostman } from 'react-icons/si';
+import { SiCplusplus, SiTypescript, SiCsharp, SiPandas, SiScikitlearn, SiNextdotjs, SiTailwindcss, SiSass, SiFlask, SiFastapi, SiPostman, SiVercel } from 'react-icons/si';
 
 
 const Skills = () => (
@@ -29,6 +29,7 @@ const Skills = () => (
       <FaGit size={50} />
       <FaLinux size={50} />
       <SiPostman size={50} />
+      <SiVercel size={50} />
     </div>
     <br />
   </div>
