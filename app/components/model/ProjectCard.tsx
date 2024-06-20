@@ -1,9 +1,9 @@
 'use client';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
 interface ProjectCardProps {
-  image: string;
+  image: StaticImageData;
   name: string;
   description: string;
   skills: string[];
@@ -12,25 +12,33 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, name, description, skills, link }) => {
   return (
-    <Link href={link} passHref>
+    <Link href={link} legacyBehavior>
       <a target="_blank" rel="noopener noreferrer">
-        <div className="transform transition-transform duration-300 hover:scale-105">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
-            <Image className="w-full" src={image} alt={name} width={400} height={225} />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">{name}</div>
-              <p className="text-gray-700 text-base">{description}</p>
+        <div className="transform transition-transform duration-300 hover:scale-105 max-w-xs rounded overflow-hidden shadow-lg hover:shadow-2xl bg-primary-color h-[30rem]">
+          <div className="relative w-full h-48"> {/* Fixed height for the image */}
+            <Image
+              src={image}
+              alt={name}
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+          <div className="px-6 py-4 flex flex-col justify-between h-48"> {/* Fixed height for the content */}
+            <div>
+              <div className="font-bold text-xl mb-2 text-secondary-color">{name}</div>
+              <p className="text-secondary-color text-base">{description}</p> {/* Description without truncation */}
             </div>
-            <div className="px-6 pt-4 pb-2">
-              {skills.map((skill, index) => (
-                <span
-                  key={index}
-                  className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-                >
-                  {index > 0 && '⋅ '}
-                  {skill}
+            <div className="mt-2">
+              {skills.length > 0 && (
+                <span className="inline-block text-secondary-color text-sm font-semibold">
+                  {skills.map((skill, index) => (
+                    <span key={index}>
+                      {index > 0 && ' ⋅ '}
+                      {skill}
+                    </span>
+                  ))}
                 </span>
-              ))}
+              )}
             </div>
           </div>
         </div>

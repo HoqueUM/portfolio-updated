@@ -55,3 +55,16 @@ body {
     -webkit-text-stroke-color: white;
 
 }
+.flex {
+    display: flex;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    flex: 0 0 calc(50% - 2rem); 
+    max-width: calc(50% - 2rem); 
+    margin-bottom: 1rem; 
+  }
