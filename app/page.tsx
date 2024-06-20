@@ -145,7 +145,7 @@ export default function Page() {
       <div id='skills'>
       <Skills />
       </div>
-      <div className='flex flex-col h-screen justify-center items-center bg-black text-secondary-color text-center' id='projects'>
+      <div className='flex flex-col h-96 justify-center items-center bg-black text-secondary-color text-center' id='projects'>
         <p className='font-bold text-3xl'>Projects</p>
       </div>
       <div className='flex flex-col justify-center items-center bg-black text-secondary-color text-center'>
@@ -163,7 +163,7 @@ export default function Page() {
     ))}
   </div>
   <br />
-  <p className='mb-2 text-2xl font-bold pb-4'> ⌛ Coming soon ⌛</p>
+  <p className='mb-2 text-2xl font-bold pb-4'> ⌛ In Progress ⌛</p>
   <div className='flex flex-wrap justify-center gap-4 pb-20'>
     {inProgress.map((project, index) => (
       <ProjectCard
@@ -177,7 +177,7 @@ export default function Page() {
     ))}
   </div>
   
-  <p className='mb-2 text-2xl font-bold pb-4'>A work in progress...</p>
+  <p className='mb-2 text-2xl font-bold pb-4'>Coming Soon...</p>
   <div className='flex flex-wrap justify-center gap-4'>
     {comingSoon.map((project, index) => (
       <ProjectCard
