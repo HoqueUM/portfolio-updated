@@ -56,7 +56,7 @@ export default function Page() {
       },
       name: 'MAL Dataset',
       description: 'A complete dataset for the popular anime website MyAnimeList as of January 2024. This project uses webscraping to fetch data from the website and store it in a CSV file.',
-      skills: ['Webscraping', 'BeautifulSoup', 'CSV'],
+      skills: ['Webscraping', 'Pandas', 'BeautifulSoup', 'CSV'],
       link: 'https://www.kaggle.com/datasets/yoursimpcard/my-anime-list-2024',
     },
   ];
@@ -69,7 +69,7 @@ export default function Page() {
       },
       name: 'MChance',
       description: 'This project uses a dataset of UMich admissions statistics from 2020 to train a model that predicts the chances of admission. Integrated into web using Docker and FastAPI. This project is currently in progress.',
-      skills: ['SciKit Learn', 'FastAPI', 'Docker', 'AWS', 'Next.js', 'Tailwind CSS'],
+      skills: ['SciKit Learn', 'Pandas', 'FastAPI', 'Docker', 'AWS', 'Next.js', 'Tailwind CSS'],
       link: 'https://mchance.vercel.app/',
     },
     {
@@ -149,7 +149,7 @@ export default function Page() {
         <p className='font-bold text-3xl'>Projects</p>
       </div>
       <div className='flex flex-col justify-center items-center bg-black text-secondary-color text-center'>
-  <p className='mb-2 text-2xl font-bold'> ✅ Complete ✅</p>
+  <p className='mb-2 text-2xl font-bold pb-4'> ✅ Complete ✅</p>
   <div className='flex flex-wrap justify-center gap-4 pb-20'>
     {complete.map((project, index) => (
       <ProjectCard
@@ -163,7 +163,7 @@ export default function Page() {
     ))}
   </div>
   <br />
-  <p className='mb-2 text-2xl font-bold'> ⌛ Coming soon ⌛</p>
+  <p className='mb-2 text-2xl font-bold pb-4'> ⌛ Coming soon ⌛</p>
   <div className='flex flex-wrap justify-center gap-4 pb-20'>
     {inProgress.map((project, index) => (
       <ProjectCard
@@ -177,7 +177,7 @@ export default function Page() {
     ))}
   </div>
   
-  <p className='mb-2 text-2xl font-bold'>A work in progress...</p>
+  <p className='mb-2 text-2xl font-bold pb-4'>A work in progress...</p>
   <div className='flex flex-wrap justify-center gap-4'>
     {comingSoon.map((project, index) => (
       <ProjectCard
