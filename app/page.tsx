@@ -117,7 +117,7 @@ export default function Page() {
       name: 'HackGR',
       description: 'Organizing the largest hackathon in West Michigan.',
       skills: ['Hackathons', 'Community Building', 'Sponsorship'],
-      link: '',
+      link: 'https://hackgr.vercel.app/',
     },
     {
       image: {
