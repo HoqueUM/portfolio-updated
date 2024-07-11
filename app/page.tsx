@@ -20,6 +20,7 @@ import mich from '../public/static/mich.png';
 import hackgr from '../public/static/hackgr.png';
 import followups from '../public/static/followups.png';
 import mal from '../public/static/mal.jpg';
+import newdropz from '../public/static/newdropz.png';
 //<div className='bg-gradient-to-br from-[#FB7B8E] from-10% via-fuchsia-400 via-30% to-[#031B88] to-90% border-2 sm:w-[40rem] lg:w-[75rem] h-screen backdrop-blur-sm z-50 rounded-3xl'></div>
 const inter = Inter({ weight: "400", subsets: ["latin"] });
 
@@ -121,14 +122,14 @@ export default function Page() {
     },
     {
       image: {
-        src: followups.src,
-        height: followups.height,
-        width: followups.width
+        src: newdropz.src,
+        height: newdropz.height,
+        width: newdropz.width
       },
-      name: 'FollowUps',
-      description: 'A service to help students follow up on every job application.',
-      skills: ['SaaS', 'Job Applications', 'Follow Ups'],
-      link: '',
+      name: 'NewDropz',
+      description: 'A hub for new snack flavors.',
+      skills: ['SaaS', 'Web Development', 'Marketing', 'APIs'],
+      link: 'https://newdropz.vercel.app/',
     },
   ];
   return (
