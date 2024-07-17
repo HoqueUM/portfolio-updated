@@ -21,6 +21,8 @@ import hackgr from '../public/static/hackgr.png';
 import followups from '../public/static/followups.png';
 import mal from '../public/static/mal.jpg';
 import newdropz from '../public/static/newdropz.png';
+import YouTube from '../public/static/YouTube.jpg';
+
 //<div className='bg-gradient-to-br from-[#FB7B8E] from-10% via-fuchsia-400 via-30% to-[#031B88] to-90% border-2 sm:w-[40rem] lg:w-[75rem] h-screen backdrop-blur-sm z-50 rounded-3xl'></div>
 const inter = Inter({ weight: "400", subsets: ["latin"] });
 
@@ -60,6 +62,17 @@ export default function Page() {
       skills: ['Webscraping', 'Pandas', 'BeautifulSoup', 'CSV'],
       link: 'https://www.kaggle.com/datasets/yoursimpcard/my-anime-list-2024',
     },
+    {
+      image: {
+        src: YouTube.src,
+        height: YouTube.height,
+        width: YouTube.width
+      },
+      name: 'YouTube Shorts Generator',
+      description: 'A script automate the YouTube shorts creation process. This project combined the Reddit API with the YouTube API to fetch trending posts and convert them into shorts.',
+      skills: ['Reddit API', 'YouTube API', 'Python'],
+      link: 'https://github.com/HoqueUM/youtubeshorts',
+      },
   ];
   const inProgress = [
     {
