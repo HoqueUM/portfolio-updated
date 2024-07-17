@@ -69,7 +69,7 @@ export default function Page() {
         width: YouTube.width
       },
       name: 'YouTube Shorts Generator',
-      description: 'A script automate the YouTube shorts creation process. This project combined the Reddit API with the YouTube API to fetch trending posts and convert them into shorts.',
+      description: 'A script automating the YouTube shorts creation process. This project combined the Reddit API with the YouTube API to fetch trending posts and convert them into shorts.',
       skills: ['Reddit API', 'YouTube API', 'Python'],
       link: 'https://github.com/HoqueUM/youtubeshorts',
       },
