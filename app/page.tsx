@@ -22,6 +22,7 @@ import followups from '../public/static/followups.png';
 import mal from '../public/static/mal.jpg';
 import newdropz from '../public/static/newdropz.png';
 import YouTube from '../public/static/YouTube.jpg';
+import EfficientFrontier from '../public/static/EfficientFrontier.jpg';
 
 //<div className='bg-gradient-to-br from-[#FB7B8E] from-10% via-fuchsia-400 via-30% to-[#031B88] to-90% border-2 sm:w-[40rem] lg:w-[75rem] h-screen backdrop-blur-sm z-50 rounded-3xl'></div>
 const inter = Inter({ weight: "400", subsets: ["latin"] });
@@ -72,6 +73,17 @@ export default function Page() {
       description: 'A script automating the YouTube shorts creation process. This project combined the Reddit API with the YouTube API to fetch trending posts and convert them into shorts.',
       skills: ['Reddit API', 'YouTube API', 'Python'],
       link: 'https://github.com/HoqueUM/youtubeshorts',
+      },
+      {
+        image: {
+          src: EfficientFrontier.src,
+          height: EfficientFrontier.height,
+          width: EfficientFrontier.width
+        },
+        name: 'Random Stock Portfolio Generator',
+        description: 'Generates an optimized random stock portfolio based on user input. This project uses stock data and optimize the portfolio using the Efficient Frontier. Then provides the best strategies for each stock.',
+        skills: ['Yahoo Finance API', 'Pandas', 'Efficient Frontier', 'Algorithmic Trading'],
+        link: 'https://random-portfolio.streamlit.app/',
       },
   ];
   const inProgress = [
